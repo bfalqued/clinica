@@ -786,3 +786,41 @@ h1 {
 .tabla-div .fila:not(.encabezado):hover {
   background-color: #f9fafb;
 }
+
+/* EJERCICIO LIGA */
+.form-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+  align-items: end;
+  margin-bottom: 1rem;
+}
+
+.form-lista label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.form-lista input,
+.form-lista select {
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+.form-lista button,
+.tabla-div button {
+  padding: 0.45rem 0.7rem;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-lista button:hover,
+.tabla-div button:hover {
+  background: #1e40af;
+}
